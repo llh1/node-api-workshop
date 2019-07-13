@@ -48,6 +48,6 @@ app.delete("/albums/:albumId", function(req, res) {
     res.status(200).send("OK");
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Server is listening on port 3000. Ready to accept requests!");
 });
